@@ -162,6 +162,14 @@ body {
   display: none;
 }
 
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
