@@ -1,0 +1,28 @@
+.reviews {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.reviews-set {
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.reviews-item {
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+  font-size: 48px;
+
+  width: calc(100% / 3);
+
+  @media screen and (min-width: 1140px) {
+    font-size: 64px;
+  }
+}
+
+$colors: "#795548", "#607d8b", "#7b1fa2";
+
+@include colorize($colors, ".reviews-item");
