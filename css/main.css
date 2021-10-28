@@ -148,6 +148,20 @@ body {
   min-height: 80px;
 }
 
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
