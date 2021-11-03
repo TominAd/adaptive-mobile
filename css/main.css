@@ -29,6 +29,12 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
+}
+
 @media screen and (min-width: 1140px) {
   .container {
     width: 1140px;
@@ -53,49 +59,12 @@ body.modal-open {
   min-height: 80px;
 }
 
-.menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-}
-
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-
-.menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: palegoldenrod;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
-}
-
-.menu-container.is-open {
-  display: block;
-}
-
 .company-logo {
   padding: 10px;
   font-style: 20px;
   background-color: #03a9f4;
   color: #fff;
+  border-radius: 25% 5%;
   text-decoration: none;
 }
 
@@ -254,5 +223,89 @@ body.modal-open {
     max-width: 500px;
     width: 100%;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal {
+    top: 40%;
+  }
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  background-color: palegoldenrod;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
+.navigation {
+  outline: 1px solid teal;
+  padding: 20px;
+}
+
+.contacts {
+  padding: 20px;
+  outline: 1px solid orange;
 }
 /*# sourceMappingURL=main.css.map */
